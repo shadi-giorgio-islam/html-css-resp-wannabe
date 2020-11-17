@@ -27,10 +27,17 @@
   #lezioni .row>.right {
     float: none;
     margin: auto;
-    width: 40%;
+    width: 100%;
   }
 }
-
+@media screen and (min-width: 420px) and (max-width: 768px){
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+    margin: auto;
+    width: 70%;
+  }
+}
 /* BLOCCO STEPS */
 #steps .row>.left,
 #steps .row>.central,
@@ -48,7 +55,7 @@
   #steps .row>.central,
   #steps .row>.right {
     float: none;
-    width: 40%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -73,7 +80,7 @@
   #why .row>.first,
   #why .row>.second,
   #why .row>.third {
-    width: 40%;
+    width: 100%;
     margin: 80px auto 0;
   }
 }
@@ -90,6 +97,7 @@
 
 img {
   height: 200px;
+  margin-top: 20px;
 }
 
 .clear {
@@ -98,6 +106,6 @@ img {
 
 @media screen and (max-width: 419px){
   img {
-    height: 100px;
+    height: 200px;
   }
 }
